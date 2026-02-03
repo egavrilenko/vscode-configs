@@ -1,0 +1,20 @@
+{
+    // https://code.visualstudio.com/docs/editing/userdefinedsnippets
+    
+    "new uuid(v4)": {
+        "scope": "",
+        "prefix": "nguid",
+        "body": [
+            "${UUID}"
+        ],
+        "description": "Inserts a new uuid(v4)"
+    },
+    "new UUID(v4)": {
+        "scope": "",
+        "prefix": "nguidu",
+        "body": [
+            "${UUID/(.*)/${1:/upcase}/}"
+        ],
+        "description": "Inserts a new UUID(v4)"
+    }
+}
